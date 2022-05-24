@@ -13,7 +13,7 @@ public class Main {
 	static void testNumberToPair(int pairNumber, MajorColor expectedMajor, MinorColor expectedMinor) {
 		ColorPair colorPair = new ColorPair(expectedMajor, expectedMinor);
 		colorPair = colorPair.getColorFromPairNumber(pairNumber);
-		System.out.println("Got pair " + colorPair.ToString());
+		System.out.println("Got pair " + colorPair.toString());
 		assert (colorPair.getMajor() == expectedMajor);
 		assert (colorPair.getMinor() == expectedMinor);
 	}
