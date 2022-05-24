@@ -26,7 +26,7 @@ public class ColorPair {
 		return minorColor;
 	}
 
-	String ToString() {
+	public String toString() {
 		String colorPairStr = MajorColorNames[majorColor.getIndex()];
 		colorPairStr += " ";
 		colorPairStr += MinorColorNames[minorColor.getIndex()];
