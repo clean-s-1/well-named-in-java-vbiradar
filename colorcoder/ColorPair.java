@@ -2,13 +2,13 @@ package colorcoder;
 
 public class ColorPair {
 
-	final static String MajorColorNames[] = { "White", "Red", "Black", "Yellow", "Violet" };
+	final static String majorColorNames[] = { "White", "Red", "Black", "Yellow", "Violet" };
 
-	final static String MinorColorNames[] = { "Blue", "Orange", "Green", "Brown", "Slate" };
+	final static String minorColorNames[] = { "Blue", "Orange", "Green", "Brown", "Slate" };
 
-	final static int numberOfMajorColors = MajorColorNames.length;
+	final static int numberOfMajorColors = majorColorNames.length;
 
-	final static int numberOfMinorColors = MinorColorNames.length;
+	final static int numberOfMinorColors = minorColorNames.length;
 
 	private MajorColor majorColor;
 	private MinorColor minorColor;
@@ -27,9 +27,9 @@ public class ColorPair {
 	}
 
 	public String toString() {
-		String colorPairStr = MajorColorNames[majorColor.getIndex()];
+		String colorPairStr = majorColorNames[majorColor.getIndex()];
 		colorPairStr += " ";
-		colorPairStr += MinorColorNames[minorColor.getIndex()];
+		colorPairStr += minorColorNames[minorColor.getIndex()];
 		return colorPairStr;
 	}
 
