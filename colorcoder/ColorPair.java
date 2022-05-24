@@ -35,8 +35,8 @@ public class ColorPair {
 
 	public ColorPair getColorFromPairNumber(int pairNumber) {
 		int zeroBasedPairNumber = pairNumber - 1;
-		MajorColor majorColor = MajorColor.fromIndex(zeroBasedPairNumber / numberOfMinorColors);
-		MinorColor minorColor = MinorColor.fromIndex(zeroBasedPairNumber % numberOfMinorColors);
+		MajorColor majorColor = ColorHelper.getIndexByEnum(MajorColor.class, zeroBasedPairNumber / numberOfMinorColors);
+		MinorColor minorColor = ColorHelper.getIndexByEnum(MinorColor.class, zeroBasedPairNumber % numberOfMinorColors);
 		return new ColorPair(majorColor, minorColor);
 	}
 
