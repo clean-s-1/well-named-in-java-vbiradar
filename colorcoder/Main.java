@@ -3,8 +3,8 @@ package colorcoder;
 public class Main {
 
 	public static void main(String[] args) {
-		testNumberToPair(4, MajorColor.WHITE, MinorColor.BROWN);
-		testNumberToPair(5, MajorColor.WHITE, MinorColor.SLATE);
+		testNumberToPair(1, MajorColor.WHITE, MinorColor.BROWN);
+		testNumberToPair(2, MajorColor.WHITE, MinorColor.SLATE);
 
 		testPairToNumber(MajorColor.BLACK, MinorColor.ORANGE, 12);
 		testPairToNumber(MajorColor.VIOLET, MinorColor.SLATE, 25);
@@ -20,7 +20,7 @@ public class Main {
 
 	static void testPairToNumber(MajorColor major, MinorColor minor, int expectedPairNumber) {
 		ColorPair colorPair = new ColorPair(major, minor);
-		int pairNumber = colorPair.getPairNumberFromColor(major, minor);
+		int pairNumber = colorPair.getPairNumberFromColor();
 		System.out.println("Got pair number " + pairNumber);
 		assert (pairNumber == expectedPairNumber);
 	}
