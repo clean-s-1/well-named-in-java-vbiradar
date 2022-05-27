@@ -20,7 +20,7 @@ public class Main {
 
 	static void testPairToNumber(MajorColor major, MinorColor minor, int expectedPairNumber) {
 		ColorPair colorPair = new ColorPair(major, minor);
-		int pairNumber = colorPair.getPairNumberFromColor();
+		int pairNumber = colorPair.getPairNumberFromColor(major, minor);
 		System.out.println("Got pair number " + pairNumber);
 		assert (pairNumber == expectedPairNumber);
 	}
